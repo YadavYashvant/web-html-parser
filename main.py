@@ -8,6 +8,7 @@ print(r)
 soup = BeautifulSoup(r.content, 'html.parser')
 print(soup.prettify())
 
+'''
 images_list = []
 
 images = soup.select('img')
@@ -18,3 +19,5 @@ for image in images:
 
 for image in images_list:
     print(image)
+
+'''
