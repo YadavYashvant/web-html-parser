@@ -5,4 +5,5 @@ r = requests.get("https://yadavyashvant.netlify.app/")
 
 print(r)
 
-soup = 
+soup = BeautifulSoup(r.content, 'html.parser')
+print(soup.prettify())
